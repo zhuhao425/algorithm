@@ -1,0 +1,4 @@
+<launch>
+  <node name="funsion_dealing" type="funsion_dealing" pkg="funsion_test" output="screen">
+  </node>
+</launch>
