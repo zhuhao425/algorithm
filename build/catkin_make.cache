@@ -1,0 +1,2 @@
+data_level_plan:robot_gazebo:turtlebot_teleop
+-DCATKIN_DEVEL_PREFIX=/home/zh/workspace/multi_lidar_scan/devel -DCMAKE_INSTALL_PREFIX=/home/zh/workspace/multi_lidar_scan/install -G Unix Makefiles

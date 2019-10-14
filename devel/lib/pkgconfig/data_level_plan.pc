@@ -1,0 +1,8 @@
+prefix=/home/zh/workspace/multi_lidar_scan/devel
+
+Name: data_level_plan
+Description: Description of data_level_plan
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zh/workspace/multi_lidar_scan/devel/lib 
+Requires: 

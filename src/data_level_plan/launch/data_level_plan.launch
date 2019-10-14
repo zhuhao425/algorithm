@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="data_level_plan" type="data_funsion" name="data_funsion" output="screen" />
+</launch>

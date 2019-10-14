@@ -1,10 +1,10 @@
 #!/bin/sh
-xterm -e "source ../../devel/setup.bash; roslaunch turtlebot_gazebo explore.launch" &
+xterm -e "export TURTLEBOT_GAZEBO_WORLD_FILE="/home/zh/workspace/multi_lidar_scan/src/worlds/playground.world"; source ../../devel/setup.bash; roslaunch robot_gazebo turtlebot_world.launch" &
 sleep 5
-xterm -e "source ../../devel/setup.bash; roslaunch funsion_test test.launch" &
+xterm -e "source ../../devel/setup.bash; roslaunch data_level_plan data_level_plan.launch" &
 sleep 5
-xterm -e "source ../../devel/setup.bash; roslaunch turtlebot_gazebo gmapping_demo.launch" &
+xterm -e "source ../../devel/setup.bash; roslaunch robot_gazebo gmapping_demo.launch" &
 sleep 5
-xterm -e "source ../../devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+xterm -e "source ../../devel/setup.bash; roslaunch robot_gazebo view_navigation.launch" &
 sleep 5
 xterm -e "source ../../devel/setup.bash; roslaunch turtlebot_teleop keyboard_teleop.launch"
