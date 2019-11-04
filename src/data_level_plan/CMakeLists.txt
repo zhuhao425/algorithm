@@ -144,7 +144,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/data_level_plan_node.cpp)
 
 add_executable(data_funsion src/data_funsion.cpp)
-target_link_libraries(data_funsion ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(data_funsion ${catkin_LIBRARIES} ${PCL_LIBRARIES} )
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
