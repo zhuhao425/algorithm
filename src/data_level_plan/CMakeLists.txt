@@ -16,7 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package (PCL 1.7 REQUIRED)
 
-set(PCL_INCLUDE_DIRS /usr/include)  #指定pcl1.8路径
+set(PCL_INCLUDE_DIRS /usr/include/pcl-1.7)  #指定pcl1.8路径
 
 add_definitions(${PCL_DEFINITIONS})
 

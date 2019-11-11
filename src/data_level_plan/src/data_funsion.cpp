@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
 #include <data_level_plan/ScanMerge.h>
-//#include <iostream>
+#include <data_level_plan/ScanMerge.cpp>
 #include <tf/transform_listener.h>
 #include <laser_geometry/laser_geometry.h>
 #include <sensor_msgs/point_cloud_conversion.h>
