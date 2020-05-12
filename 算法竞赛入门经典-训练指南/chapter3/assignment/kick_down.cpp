@@ -20,7 +20,7 @@ int main()
     {
         cin >> b;
         int i = 0;
-        int x1;
+        int x1 = a.length() + b.length();
         for (; i < a.length(); ++i)
         {
             int j = 0;
@@ -33,14 +33,12 @@ int main()
             }
             if (j == b.length())
             {
-                x1 = getMax(i + b.length(), a.length());
-                break;
+                int t = getMax(i + b.length(), a.length());
+                x1 = getMin(x1,t);
             }
         }
-        if(i == a.length())
-            x1 = a.length() + b.length();
-
-        int x2;
+        int x2 = a.length() + b.length();
+        i = 0;
         for (; i < b.length(); ++i)
         {
             int j = 0;
@@ -53,12 +51,10 @@ int main()
             }
             if (j == a.length())
             {
-                x2 = getMax(i + a.length(), b.length());
-                break;
+                int t = getMax(i + a.length(), b.length());
+                x2 = getMin(t,x2);
             }
         }
-        if(i == b.length())
-            x2 = a.length() + b.length();
 
         cout << getMin(x1, x2) << endl;
     }
